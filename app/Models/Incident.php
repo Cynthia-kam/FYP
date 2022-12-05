@@ -5,16 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-
-class User extends Model
+class Incident extends Model
 {
     use HasFactory;
-      public $timestamps = false;
-      protected $fillable = [
-        'name',
+     protected $fillable = [
+        'id',
+        'farmer',
         'cooperative',
-        'username',
-        'password',
+        'disease',
+        'image',
     ];
 
 }

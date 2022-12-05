@@ -21,4 +21,5 @@ use App\Http\Controllers\MainController;
 // });
 Route::post('/register',[MainController::class,'store']);
 Route::post('/checklogin',[MainController::class,'check']);
+Route::post('/saveimage',[MainController::class,'storeCase']);
 Route::get('/register',[MainController::class,'getUsers']);
